@@ -30,6 +30,9 @@ Test:
   Trello Link in README.md  
 - 9 december 2022
   AP
-  bijvoeging omschrijving opdracht  
+  bijvoeging omschrijving opdracht 
+- 9 december
+  AS
+  eerste gedeelte website gemaakt en opgemaakt 
 ---  
 
