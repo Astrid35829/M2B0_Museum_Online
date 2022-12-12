@@ -37,10 +37,6 @@ header > img{
 .button{
     background: rgb(219, 124, 124);
     border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
     width: 130px;
     height: 36px;
 }
@@ -50,6 +46,7 @@ header > img{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 .menu > h5{
