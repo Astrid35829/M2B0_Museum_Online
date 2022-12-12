@@ -34,5 +34,8 @@ Test:
 - 9 december
   AS
   eerste gedeelte website gemaakt en opgemaakt 
+- 12 december  
+  AP  
+  start blocken, menu, titel, intro
 ---  
 
