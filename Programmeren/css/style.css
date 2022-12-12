@@ -6,7 +6,6 @@
 
 body{
     background: rgb(34, 33, 33);
-
 }
 
 header{
@@ -103,4 +102,18 @@ p{
     justify-content: center;
     align-items: center;
     padding: 40px;
+}
+
+footer{
+    background: black;
+}
+
+footer > h4{
+    color: black;
+    background:#FFF68C;
+}
+
+footer > p{
+    color: black;
+    background:#FFF68C;
 }
