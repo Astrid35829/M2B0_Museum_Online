@@ -32,17 +32,15 @@ header > img{
     align-items: center;
     margin-right: 20px;
     width: 130px;
+    height: 36px;
 }
 
 .button{
     background: rgb(219, 124, 124);
     border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
     width: 130px;
     height: 36px;
+    
 }
 
 .menu > a{
@@ -81,7 +79,7 @@ figcaption{
 }
 
 a{
-    color: aqua;
+    color: rgb(78, 105, 240);
 }
 
 .titel{
