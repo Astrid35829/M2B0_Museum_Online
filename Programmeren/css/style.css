@@ -78,6 +78,12 @@ figcaption{
 
 a{
     color: aqua;
+    margin-bottom: 40px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 }
 
 .titel{
@@ -108,12 +114,20 @@ footer{
     background: black;
 }
 
-footer > h4{
+footer > div{
     color: black;
+    display: flex;
+    border-radius: 25px;
+}
+
+footer > div > p > a{
+    color: black;
+}
+
+.Contact{
     background:#FFF68C;
 }
 
-footer > p{
-    color: black;
-    background:#FFF68C;
+.Adres{
+    background: rgb(219, 124, 124);;
 }
