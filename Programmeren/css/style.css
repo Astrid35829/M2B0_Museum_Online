@@ -4,8 +4,17 @@
     box-sizing: border-box;
 }
 
+:root{
+    --rood: rgb(219, 124, 124);
+    --geel:rgb(255, 246, 140);
+    --groen: rgb(171, 232, 171);
+    --blauw: rgb(107, 206, 233);
+    --achtergrondZwart: rgb(34, 33, 33);
+    --letersZwart: black; 
+}
+
 body{
-    background: rgb(34, 33, 33);
+    background: var(--achtergrondZwart)
 }
 
 header{
@@ -24,7 +33,7 @@ header > img{
 }
 
 .menu{
-    background: rgb(219, 124, 124);
+    background: var(--rood);
     border-radius: 25px;
     display: flex;
     justify-content: center;
@@ -35,7 +44,7 @@ header > img{
 }
 
 .button{
-    background: rgb(219, 124, 124);
+    background: var(--rood);
     border-radius: 25px;
     width: 130px;
     height: 36px;
@@ -43,7 +52,7 @@ header > img{
 }
 
 .menu > a{
-    color: black;
+    color: var(--letersZwart);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +60,7 @@ header > img{
 }
 
 .menu > h5{
-    color: black;
+    color: var(--letersZwart);
     padding: 10px;
 }
 
@@ -89,7 +98,7 @@ a{
 }
 
 .titel{
-    background: rgb(171, 232, 171);
+    background: var(--groen);
     border-radius: 25px;
     display: flex;
     justify-content: center;
@@ -98,13 +107,13 @@ a{
 }
 
 .intro{
-    background: rgb(107, 206, 233);
+    background: var(--blauw);
     border-radius: 25px;
 }
 
 p{
     margin-bottom: 40px;
-    color: black;
+    color: var(--letersZwart);
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -113,23 +122,35 @@ p{
 }
 
 footer{
-    background: black;
+    background: var(--achtergrondZwart);
+    display: flex;
+    align-items: center;
 }
 
 footer > div{
-    color: black;
+    color: var(--achtergrondZwart);
     display: flex;
     border-radius: 25px;
+    height: 200px;
+    width: 100vh;
 }
 
 footer > div > p > a{
-    color: black;
+    color: var(--letersZwart);
 }
 
 .Contact{
-    background:#FFF68C;
+    background:var(--geel);
 }
 
 .Adres{
-    background: rgb(219, 124, 124);;
+    background: var(--rood);
+}
+
+.Socialmedia{
+    background: var(--groen);
+}
+
+.Openingstijden{
+    background: var(--blauw);
 }
