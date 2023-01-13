@@ -4,9 +4,18 @@
     box-sizing: border-box;
 }
 
-body{
-    background: rgb(34, 33, 33);
+:root{
+    --rood: rgb(219, 124, 124);
+    --geel:rgb(255, 246, 140);
+    --groen: rgb(171, 232, 171);
+    --blauw: rgb(107, 206, 233);
+    --achtergrondZwart: rgb(34, 33, 33);
+    --letersZwart: black; 
+}
 
+body{
+
+    background: var(--achtergrondZwart)
 }
 
 header{
@@ -27,6 +36,7 @@ header > img{
 }
 
 .menu{
+
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -49,11 +59,36 @@ header > img{
     color: black;
     width: 100%;
     height: 100%;
+
+    background: var(--rood);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    width: 130px;
+    height: 36px;
+}
+
+.button{
+    background: var(--rood);
+    border-radius: 25px;
+    width: 130px;
+    height: 36px;
+    
+}
+
+.menu > a{
+    color: var(--letersZwart);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.menu > h5{
+    color: var(--letersZwart);
+    padding: 10px;
+}
 
 article{
     width: 60vw;
@@ -88,7 +123,7 @@ a{
 }
 
 .titel{
-    background: rgb(171, 232, 171);
+    background: var(--groen);
     border-radius: 25px;
     display: flex;
     justify-content: center;
@@ -97,14 +132,14 @@ a{
 }
 
 .intro{
-    background: rgb(107, 206, 233);
+    background: var(--blauw);
     border-radius: 25px;
 
 }
 
 .intro > p{
     margin-bottom: 40px;
-    color: black;
+    color: var(--letersZwart);
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -197,19 +232,15 @@ a{
 }
 
 footer{
-    background: black;
+
+    background: var(--achtergrondZwart);
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
-    height: 300px;
-    width: 100vw;
 }
 
 footer > div{
-    color: black;
-    height: 80%;
-    width: 40%;
+    color: var(--achtergrondZwart);
+    display: flex;
     border-radius: 25px;
     text-align: center;
 }
@@ -228,14 +259,16 @@ footer > div > p{
     align-items: center;
     justify-content: center;
     padding: 10px;
+    height: 200px;
+    width: 100vh;
 }
 
 footer > div > p > a{
-    color: black;
+    color: var(--letersZwart);
 }
 
 .Contact{
-    background:#FFF68C;
+    background:var(--geel);
 }
 
 footer > .Contact > nav > ul > li > a{
@@ -247,13 +280,14 @@ footer > .Contact > nav > ul > li > a{
 }
 
 .Adres{
-    background: rgb(219, 124, 124);;
+    background: var(--rood);
 }
 
-.social{
-    background:rgb(171, 232, 171);
+.Socialmedia{
+    background: var(--groen);
 }
 
-.tijden{
-    background:rgb(107, 206, 233);
+.Openingstijden{
+    background: var(--blauw);
 }
+
