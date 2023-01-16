@@ -23,43 +23,37 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     height: 100px;
     width: 100vw;
 }
 
 header > img{
-    width: 100px;;
+    width: 150px;;
     height: 100%;
     margin-right: 20px;
     margin-left: 10px;
 }
 
-.menu{
-
-    width: 100%;
+nav{
+    width: 60vw;
     height: 100%;
     margin: 0 auto;
-    
 }
 
-.menu > ul{
+nav > ul{
     display: flex;
     list-style: none;
     height: 100%;
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
-    gap: 20px;
-    background:rgb(219, 124, 124);
-    border-radius: 25px;
+    gap: 5px;
 }
 
-.menu > ul > li{
+nav > ul > li{
     color: black;
     width: 100%;
     height: 100%;
-
     background: var(--rood);
     border-radius: 25px;
     display: flex;
@@ -70,24 +64,31 @@ header > img{
     height: 36px;
 }
 
+nav > ul > li > a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
 .button{
     background: var(--rood);
     border-radius: 25px;
-    width: 130px;
+    width: 50px;
     height: 36px;
     
 }
 
-.menu > a{
+.buttons > a{
     color: var(--letersZwart);
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.menu > h5{
-    color: var(--letersZwart);
-    padding: 10px;
 }
 
 article{
@@ -148,8 +149,8 @@ a{
 }
 
 .buttons{
-    width: 100%;
-    height: 0%px;
+    width: 500px;
+    height: 0%;
     margin: 0 auto;
 }
 
@@ -189,7 +190,21 @@ a{
     animation-name: fotoslider;
     animation-duration: 20s;
     animation-iteration-count: infinite;
+    margin: 0 auto;
+    margin-bottom: 40px;
 }
+
+.news{
+    background: red;
+    width: 200px;
+    border-radius: 25px;
+}
+
+.news > h2{
+    
+}
+
+
 
 @keyframes fotoslider{
     0%{
@@ -231,11 +246,54 @@ a{
     }
 }
 
-footer{
+.box{
+    width: 60vw;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.box > a{
+    text-decoration: none;
+    color: black;
+}
+
+.box > a > figure > img{
+    height: 150px;
+    width: 75px;
+    object-fit: cover;
+}
+
+.box > a > figure > img:hover{
+    transform: none;
+}
+
+.box--first{
+    background: var(--geel);
+}
+
+.box--second{
+    background: var(--rood);
+}
+
+.box--third{
+    background: var(--groen);
+}
+
+.box--fourth{
+    background: var(--blauw);
+}
+
+footer{
+    width: 60vw;
     background: var(--achtergrondZwart);
     display: flex;
     align-items: center;
+    margin: 0 auto;
 }
 
 footer > div{
@@ -245,22 +303,22 @@ footer > div{
     text-align: center;
 }
 
-footer > .contact{
+footer > .Contact, .Adres, .Socialmedia, .Openingstijden{
     display: flex;
-    align-items: center;  
+    flex-wrap: wrap;  
 }
 
 footer > div > h4{
-   margin: 10px; ;
+   
 }
 
-footer > div > p{
+footer > .Contact, .Adres, .Socialmedia, .Openingstijden > p{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
     height: 200px;
-    width: 100vh;
+    width: 60vh;
+    
 }
 
 footer > div > p > a{
@@ -287,7 +345,15 @@ footer > .Contact > nav > ul > li > a{
     background: var(--groen);
 }
 
+
+
 .Openingstijden{
     background: var(--blauw);
 }
 
+.meep > h2{
+    background: lightgoldenrodyellow;
+}
+.meep > p{
+    background: lightblue;
+}
