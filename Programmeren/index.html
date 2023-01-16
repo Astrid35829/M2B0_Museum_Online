@@ -1,55 +1,120 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <link rel="stylesheet" href="css/style.css">
     <title>Nationaal Videogame Museum</title>
 </head>
+
 <body>
-    <header>
-        <img src="afbeldingen/nvgm_zonder_achtergrond.webp" alt="logo van nationaal vidio game Museum">
-        <nav class = "menu">
+    <header id="header">
+        <img class="logo" src="img/nvgm_zonder_achtergrond.webp" alt="logo van nationaal video game Museum">
+        <nav>
             <ul>
-                <li>Gameplay</li>
-                <li>Tickets</li>
-                <li>Educatie</li>
-                <li>Feesten & Partijen</li>
-                <li>Contact</li>
-                <li>Meer</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gameplay.html">Gameplay</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+                <li><a href="educatie.html">Educatie</a></li>
+                <li><a href="feesten.html">Feesten</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="meer.html">Meer</a></li>
             </ul>
         </nav>
     </header>
-    <article>
-        <figure>
-            <img src="afbeldingen/nvgm_zonder_achtergrond.webp" alt="logo van nationaal vidio game Museum">
-        </figure>
-        <figure class = "titel">
-            <h2>Nationaal Videogame Museum</h2>
-        </figure>
-        <figure class = "intro">
-            <p> 
-                Het Nationaal Videogame Museum is 'the place to be' voor iedereen die meer wil weten (én beleven) over de geschiedenis, 
-                maatschappelijke en culturele kant van videogames. <br>
-                Het museum laat haar bezoekers ook de games van morgen ervaren. 
-                Gamers van jong tot oud zijn welkom om te spelen, ontdekken, 
-                leren en ervaringen online te delen.
-            </p>
-        </figure>
-        <figure class = "ticketButtons">
-            <nav class = "buttons">
+    <main>
+        <section>
+            <article>
+                <figure>
+                    <img src="img/nvgm_zonder_achtergrond.webp" alt="logo van nationaal vidio game Museum">
+                </figure>
+                <figure class="titel">
+                    <h2>Nationaal Videogame Museum</h2>
+                </figure>
+                <figure class="intro">
+                    <p>
+                        Het Nationaal Videogame Museum is 'the place to be' voor iedereen die meer wil weten (én
+                        beleven)
+                        over de geschiedenis,
+                        maatschappelijke en culturele kant van videogames. <br>
+                        Het museum laat haar bezoekers ook de games van morgen ervaren.
+                        Gamers van jong tot oud zijn welkom om te spelen, ontdekken,
+                        leren en ervaringen online te delen.
+                    </p>
+                </figure>
+            </article>
+        </section>
+        <section>
+            <figure class="buttons">
                 <ul>
-                    <li><a class = "tickets" href="https://www.nationaalvideogamemuseum.nl/koop-een-ticket">Tickets</a></li>
-                    <li><a class = "minigame" href="https://offline-dino-game.firebaseapp.com/">Minigame</a></li>
+                    <li> <a class="tickets" href="https://www.nationaalvideogamemuseum.nl/koop-een-ticket">Tickets</a></li>
+                    <li><a class="minigame" href="https://offline-dino-game.firebaseapp.com/">Minigame</a></li>
                 </ul>
-            </nav>
-        </figure>
-        <figure class = "slide">
-            
-        </figure>
-    </article>
+            </figure>
+        </section>
+            <figure class="slide">
+                <img src="img/slideshow1.jpg" alt="">
+            </figure>
+        <section>
+            <figure class="news">
+                <h2></h2>
+            </figure>
+            <img class="newsimg" src="" alt="">
+        </section>
+        <article class="box box--first">
+            <a href="gameplay.html">
+                <figure>
+                    <img src="img/overview.jpg" alt="">
+                </figure>
+                <section>
+                    <h2>Gameplay</h2>
+                    <p>Wat je beleeft in het museum</p>
+                </section>
+            </a>
+        </article>
+        <article class="box box--second">
+            <a href="info.html">
+                <figure>
+                    <img src="img/geschiedenis.jpg" alt="">
+                </figure>
+                <section>
+                    <h2>Geschiedenis</h2>
+                    <p>
+                        Geschiedenis van het museum
+                    </p>
+                </section>
+            </a>
+        </article>
+        <article class="box box--third">
+            <a href="info.html">
+                <figure>
+                    <img src="img/toekomst.jpg" alt="">
+                </figure>
+                <section>
+                    <h2>Toekomst</h2>
+                    <p>
+                        Toekomst van het museum
+                    </p>
+                </section>
+            </a>
+        </article>
+        <article class="box box--fourth">
+            <a href="info.html">
+                <figure>
+                    <img src="img/donateurs.jpg" alt="">
+                </figure>
+                <section>
+                    <h2>Donateurs</h2>
+                    <p>
+                        Wordt Donateur of vrijwilliger
+                    </p>
+                </section>
+            </a>
+        </article>
+    </main>
     <footer>
         <div class="Contact">
             <h4>Contact</h4>
@@ -59,11 +124,11 @@
                 Zakelijk: zakelijk@nationaalvideogamemuseum.nl
             </p>
         </div>
-        
+
         <div class="Adres">
             <h4>Adres</h4>
             <p>
-                Theaterplein 11  2711 EK Zoetermeer
+                Theaterplein 11 2711 EK Zoetermeer
             </p>
         </div>
 
@@ -76,13 +141,20 @@
                 <img src="afbeldingen/twitter.webp" alt="twitter">
             </figure>
         </div>
-        
+
         <div class="Openingstijden">
             <h4>Openingstijden</h4>
             <p>
-                
+                Maandag: gesloten <br>
+                Dinsdag: gesloten<br>
+                Woendsdag: 10.00-18.00<br>
+                Donderdag: 10.00-18.00<br>
+                Vrijdag: 10.00-18.00<br>
+                Zaterdag: 10.00-18.00<br>
+                Zondag: 12.00-18.00<br>
             </p>
         </div>
     </footer>
 </body>
+
 </html>
