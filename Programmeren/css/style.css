@@ -112,9 +112,7 @@ figcaption{
     margin: 40px;
 }
 
-a{
-    background: var(--letersZwart);
-}
+
 
 .titel{
     background: var(--groen);
@@ -132,7 +130,7 @@ a{
 
 .intro > p{
     margin-bottom: 40px;
-    color: var(--letersZwart);
+    color: black;
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -276,7 +274,7 @@ a{
 
 footer{
     width: 60vw;
-    background: var(--achtergrondZwart);
+    background: white;
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -287,29 +285,35 @@ footer > div{
     border-radius: 25px;
     text-align: center;
     height: 100%;
+    padding: 10px;
 }
 
 footer > div > h4{
-   margin: 10px;
+   
 }
 
 footer > .Contact, .Adres, .Socialmedia, .Openingstijden{
     display: flex;
     flex-wrap: wrap;  
+    height: 200px;
+    width: 60vw;
 }
 
 footer > .Contact, .Adres, .Socialmedia, .Openingstijden > p{
     display: flex;
     align-items: center;
+}
 
+footer > .Contact{
+    
 }
 
 footer > div > figure{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 200px;
-    width: 60vh;
+    height: 100%;
+    width: 100%;
 }
 
 footer > div > p > a{
@@ -326,11 +330,24 @@ footer > div > p > a{
 
 .Socialmedia{
     background: var(--groen);
+    
+}
+
+.Socialmedia > figure{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
 }
 
 
 
-.Openingstijden{
+.Socialmedia > figure> a> img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.Openingstijden{ 
     background: var(--blauw);
 }
 
