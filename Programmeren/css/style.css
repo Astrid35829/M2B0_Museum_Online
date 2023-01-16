@@ -244,6 +244,10 @@ figcaption{
 .box > a{
     text-decoration: none;
     color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
 }
 
 .box > a > figure > img{
@@ -274,7 +278,7 @@ figcaption{
 
 footer{
     width: 60vw;
-    background: white;
+    background: var(--achtergrondZwart);
     display: flex;
     align-items: center;
     margin: 0 auto;
