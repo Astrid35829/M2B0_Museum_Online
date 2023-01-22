@@ -26,6 +26,52 @@ header{
     width: 100vw;
 }
 
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--letersZwart);
+}
+
+nav{
+    width: 60vw;
+    height: 100%;
+    margin: 0 auto;
+}
+
+article{
+    width: 60vw;
+    margin:0 auto;
+    padding: 40px;
+}
+
+img{
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.2s transform;
+}
+
+figcaption{
+    font-size: 80%;
+    font-style: italic;
+    margin: 40px;
+}
+
+footer{
+    width: 90vw;
+    background: var(--achtergrondZwart);
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap:20px;
+}
+
+
+
+
+
 header > img{
     width: 150px;;
     height: 100%;
@@ -33,10 +79,8 @@ header > img{
     margin-left: 10px;
 }
 
-nav{
-    width: 60vw;
-    height: 100%;
-    margin: 0 auto;
+header > img:hover{
+    transform: none;
 }
 
 nav > ul{
@@ -69,11 +113,51 @@ nav > ul > li > a{
     display: block;
     text-align: center;
     line-height: 60px;
-    text-decoration: none;
     color: var(--letersZwart);
 }
 
 
+img:hover{
+    transform: scale(1.05);
+}
+
+footer > div{
+    display: flex;
+    border-radius: 25px;
+    text-align: center;
+    height: 200px;
+    padding: 40px;
+}
+
+footer > div > h4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer > .Contact, .Adres, .Socialmedia, .Openingstijden{
+    display: flex;
+    flex-wrap: wrap;  
+    width: 60vw;
+}
+
+footer > .Contact, .Adres, .Socialmedia, .Openingstijden > p{
+    display: flex;
+    align-items: center;
+}
+
+footer > div > figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+footer > div > p > a{
+    color: var(--letersZwart);
+    display: block;
+}
 
 .button{
     background: var(--rood);
@@ -87,54 +171,6 @@ nav > ul > li > a{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-article{
-    width: 60vw;
-    margin:0 auto;
-    padding: 40px;
-}
-
-img{
-    width: 100%;
-    border-radius: 5px;
-    transition: 0.2s transform;
-}
-
-img:hover{
-    transform: scale(1.05);
-}
-
-figcaption{
-    font-size: 80%;
-    font-style: italic;
-    margin: 40px;
-}
-
-
-
-.titel{
-    background: var(--groen);
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.intro{
-    background: var(--blauw);
-    border-radius: 25px;
-    margin-bottom: 20px;
-}
-
-.intro > p{
-    color: black;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
 }
 
 .buttons{
@@ -164,12 +200,36 @@ figcaption{
     height: 100%;
     display: block;
     text-align: center;
-    text-decoration: none;
     color: var(--letersZwart);
     line-height: 60px;
     background: violet;
     border-radius: 75px;
 }
+
+.titel{
+    background: var(--groen);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.intro{
+    background: var(--blauw);
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.intro > p{
+    color: black;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
 
 .slide{
     width: 500px;
@@ -193,30 +253,30 @@ figcaption{
 @keyframes fotoslider{
     0%{
         opacity: 0;
-        background-image: url("../afbeldingen/slideshow1.jpg");
+        background-image: url("../img/slideshow1.jpg");
     }
     10%{
         opacity: 1;
-        background-image: url("../afbeldingen/slideshow1.jpg");
+        background-image: url("../img/slideshow1.jpg");
     }
     19%{
         opacity: 0;
-        background-image: url("../afbeldingen/slideshow1.jpg");
+        background-image: url("../img/slideshow1.jpg");
     }
     20%{
         opacity: 0;
-        background-image: url("../afbeldingen/slideshow2.jpg");
+        background-image: url("../img/slideshow2.jpg");
     }
     30%{
         opacity: 1;
-        background-image: url("../afbeldingen/slideshow2.jpg");
+        background-image: url("../img/slideshow2.jpg");
     }
     39%{
         opacity: 0;
-        background-image: url("../afbeldingen/slideshow2.jpg");
+        background-image: url("../img/slideshow2.jpg");
     }
     40%{
-        background-image: url("../afbeldingen/slideshow3.jpg");
+        background-image: url("../img/slideshow3.jpg");
     }
     60%{
 
@@ -230,6 +290,14 @@ figcaption{
     }
 }
 
+.reviews{
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .box{
     width: 60vw;
     height: 200px;
@@ -242,7 +310,6 @@ figcaption{
 }
 
 .box > a{
-    text-decoration: none;
     color: black;
     display: flex;
     align-items: center;
@@ -279,57 +346,6 @@ figcaption{
     background: var(--blauw);
 }
 
-footer{
-    width: 90vw;
-    background: var(--achtergrondZwart);
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    gap:20px;
-}
-
-footer > div{
-    display: flex;
-    border-radius: 25px;
-    text-align: center;
-    height: 200px;
-    padding: 40px;
-}
-
-footer > div > h4{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-footer > .Contact, .Adres, .Socialmedia, .Openingstijden{
-    display: flex;
-    flex-wrap: wrap;  
-    width: 60vw;
-    
-}
-
-footer > .Contact, .Adres, .Socialmedia, .Openingstijden > p{
-    display: flex;
-    align-items: center;
-}
-
-footer > .Contact{
-    
-}
-
-footer > div > figure{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-footer > div > p > a{
-    color: var(--letersZwart);
-    display: block;
-}
 
 .Contact{
     background:var(--geel);
@@ -337,14 +353,6 @@ footer > div > p > a{
 
 .Contact > ul{
     margin: 0 auto;
-}
-
-.Contact > ul > li{
-    list-style: none;
-}
-
-.Contact > ul > li > a{
-    text-decoration: none;
 }
 
 .Adres{
@@ -367,17 +375,12 @@ footer > div > p > a{
     height: 40px;
 }
 
-
 .Openingstijden{ 
     background: var(--blauw);
 }
 
 .Openingstijden > ul{
     margin: 0 auto;
-}
-
-.Openingstijden > ul > li{
-    list-style: none;
 }
 
 .meep > h2{
@@ -387,6 +390,3 @@ footer > div > p > a{
     background: lightblue;
 }
 
-section > article{
-
-}
