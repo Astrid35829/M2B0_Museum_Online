@@ -20,40 +20,49 @@ body{
 .translate{
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     margin: 10px;
     gap: 5px;
 }
 
-.translate > .dutch{
+.translate > ul{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.translate > ul > .dutch{
     width: 100px;
     height: 20px;
     background: var(--geel);
     border-radius: 25px;
 }
 
-.translate > .dutch > img{
+.translate > ul > .dutch > img{
     width: 12px;
     height: 10px;
 }
 
-.translate > .dutch > img:hover{
+.translate > ul > .dutch > img:hover{
     transform: none;
 }
 
-.translate > .english{
+.translate > ul > .english{
     width: 100px;
     height: 20px;
     background: var(--geel);
     border-radius: 25px;
 }
 
-.translate > .english > img{
+.translate > ul > .english > img{
     width: 12px;
     height: 10px;
 }
 
-.translate > .english > img:hover{
+.translate > ul > .english > img:hover{
     transform: none;
 }
 
@@ -78,7 +87,6 @@ a{
 nav{
     width: 60vw;
     height: 100%;
-    margin: 0 auto;
 }
 
 article{
@@ -121,11 +129,10 @@ header > img:hover{
 
 nav > ul{
     display: flex;
-    list-style: none;
     height: 100%;
     width: 100%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 5px;
 }
 
@@ -133,9 +140,7 @@ nav > ul > li{
     color: var(--letersZwart);
     background: var(--rood);
     border-radius: 25px;
-    margin-right: 20px;
     width: 130px;
-    height: 36px;
 }
 
 nav > ul > li > a{
@@ -347,7 +352,7 @@ footer > div > p > a{
 
 .reviews{
     width: 60vw;
-    height: 500px;
+    height: 650px;
     margin: 0 auto;
     margin-bottom: 40px;
 }
@@ -363,7 +368,7 @@ footer > div > p > a{
 
 .bruijn{
     height: 170px;
-    width: 400px;
+    width: 500px;
     margin: 0 auto;
     background: var(--rood);
     border-radius: 25px;
@@ -375,7 +380,7 @@ footer > div > p > a{
 
 .bijmholt{
     height: 170px;
-    width: 400px;
+    width: 500px;
     margin: 0 auto;
     background: var(--groen);
     border-radius: 25px;
@@ -387,13 +392,17 @@ footer > div > p > a{
 
 .pronk{
     height: 170px;
-    width: 400px;
+    width: 500px;
     margin: 0 auto;
     background: var(--blauw);
     border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.reviews > div > p{
+    
 }
 
 .box{
@@ -412,7 +421,7 @@ footer > div > p > a{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 150px;
     width: 100%;
     height: 100%;
 }
@@ -436,15 +445,9 @@ footer > div > p > a{
     background: var(--rood);
 }
 
-.box--third{
-    background: var(--groen);
+footer > div{
+
 }
-
-.box--fourth{
-    background: var(--blauw);
-}
-
-
 .Contact{
     background:var(--geel);
 }
@@ -494,5 +497,11 @@ footer > div > p > a{
 @media screen and (max-width: 1260px){
     header > ul > li > a{
         flex-wrap: wrap;
+    }
+}
+
+@media screen and(max-width: 1000px){
+    footer > div{
+        height: 300px;
     }
 }
