@@ -17,6 +17,46 @@ body{
     background: var(--achtergrondZwart)
 }
 
+.translate{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px;
+    gap: 5px;
+}
+
+.translate > .dutch{
+    width: 100px;
+    height: 20px;
+    background: var(--geel);
+    border-radius: 25px;
+}
+
+.translate > .dutch > img{
+    width: 12px;
+    height: 10px;
+}
+
+.translate > .dutch > img:hover{
+    transform: none;
+}
+
+.translate > .english{
+    width: 100px;
+    height: 20px;
+    background: var(--geel);
+    border-radius: 25px;
+}
+
+.translate > .english > img{
+    width: 12px;
+    height: 10px;
+}
+
+.translate > .english > img:hover{
+    transform: none;
+}
+
 header{
     margin-top: 10px;
     display: flex;
@@ -68,10 +108,6 @@ footer{
     gap:20px;
 }
 
-
-
-
-
 header > img{
     width: 150px;;
     height: 100%;
@@ -95,13 +131,8 @@ nav > ul{
 
 nav > ul > li{
     color: var(--letersZwart);
-    width: 100%;
-    height: 100%;
     background: var(--rood);
     border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-right: 20px;
     width: 130px;
     height: 36px;
@@ -113,6 +144,7 @@ nav > ul > li > a{
     display: block;
     text-align: center;
     line-height: 60px;
+    text-decoration: none;
     color: var(--letersZwart);
 }
 
@@ -232,7 +264,7 @@ footer > div > p > a{
 
 
 .slide{
-    width: 500px;
+    width: 300px;
     height: 300px;
     min-width: 100vh;
     border-radius: 5px;
@@ -241,13 +273,7 @@ footer > div > p > a{
     animation-duration: 20s;
     animation-iteration-count: infinite;
     margin: 0 auto;
-    margin-bottom: 90px;
-}
-
-.news{
-    background: red;
-    width: 200px;
-    border-radius: 25px;
+    margin-bottom: 40px;
 }
 
 @keyframes fotoslider{
@@ -275,28 +301,100 @@ footer > div > p > a{
         opacity: 0;
         background-image: url("../img/slideshow2.jpg");
     }
+
     40%{
+        opacity: 0;
         background-image: url("../img/slideshow3.jpg");
     }
-    60%{
+    50%{
+        opacity: 1;
+        background-image: url("../img/slideshow3.jpg");
+    }
+    59%{
+        opacity: 0;
+        background-image: url("../img/slideshow3.jpg");
+    }
 
+    60%{
+        opacity: 0;
+        background-image: url("../img/slideshow4.jpg");
+    }
+    70%{
+        opacity: 1;
+        background-image: url("../img/slideshow4.jpg");
+    }
+    79%{
+        opacity: 0;
+        background-image: url("../img/slideshow4.jpg");
     }
     80%{
-
+        opacity: 1;
+        background-image: url("../img/slideshow5.jpg");
+    }
+    90%{
+        opacity: 1;
+        background-image: url("../img/slideshow5.jpg");
+    }
+    99%{
+        opacity: 0;
+        background-image: url("../img/slideshow5.jpg");
     }
     100%{
-        background-image: url("../afbeldingen/slideshow1.jpg");
-
+        opacity: 0;
+        background-image: url("../img/slideshow1.jpg");
     }
 }
 
 .reviews{
     width: 60vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom: 40px;
 }
 
+.reviewsHead{
+    background: var(--geel);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.bruijn{
+    height: 170px;
+    width: 400px;
+    margin: 0 auto;
+    background: var(--rood);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.bijmholt{
+    height: 170px;
+    width: 400px;
+    margin: 0 auto;
+    background: var(--groen);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pronk{
+    height: 170px;
+    width: 400px;
+    margin: 0 auto;
+    background: var(--blauw);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .box{
     width: 60vw;
@@ -357,6 +455,9 @@ footer > div > p > a{
 
 .Adres{
     background: var(--rood);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Socialmedia{
@@ -390,3 +491,8 @@ footer > div > p > a{
     background: lightblue;
 }
 
+@media screen and (max-width: 1260px){
+    header > ul > li > a{
+        flex-wrap: wrap;
+    }
+}

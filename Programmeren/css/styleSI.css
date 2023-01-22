@@ -1,3 +1,4 @@
+
 .grid{
     width: 300px;
     height: 300px;
@@ -29,4 +30,10 @@
 
 .boom{
     background-color: red;
+}
+
+.gameOverScreen{
+    width: 100vw;
+    height: 100hw;
+    background: rgb(34, 33, 33);
 }

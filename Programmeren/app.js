@@ -8,6 +8,8 @@ let goingRight = true
 let aliensRemoved = []
 let results = 0
 
+const button = document.getElementById("jss--startGame");
+
 for(let i = 0; i < 225; i++){
     const square = document.createElement('div')
     grid.appendChild(square)
@@ -28,6 +30,8 @@ function draw(){
         } 
     }
 }
+
+
 
 draw()
 
@@ -97,9 +101,7 @@ function moveInvaders(){
         clearInterval(invadersId)
     }
 
-    if (resultsDisplay.innerHTML = 'Game over'){
-        
-    }
+    
 }
 invadersId = setInterval(moveInvaders, 500)
 
@@ -133,3 +135,4 @@ function shoot(e){
 }
 
 document.addEventListener('keydown', shoot)
+
