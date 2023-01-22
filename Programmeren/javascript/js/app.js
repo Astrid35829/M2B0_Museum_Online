@@ -96,6 +96,10 @@ function moveInvaders(){
         resultsDisplay.innerHTML = 'You win'
         clearInterval(invadersId)
     }
+
+    if (resultsDisplay.innerHTML = 'Game over'){
+        
+    }
 }
 invadersId = setInterval(moveInvaders, 500)
 

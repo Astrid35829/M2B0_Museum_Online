@@ -4,6 +4,7 @@
     border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
+    background-image: url("background.jpg");
 }
 
 .grid div{
@@ -14,6 +15,7 @@
 .invader{
     background-color: purple;
     border-radius: 10px;
+
 }
 
 .shooter{
