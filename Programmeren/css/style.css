@@ -367,7 +367,7 @@ footer > div > p > a{
 }
 
 .bruijn{
-    height: 170px;
+    height: 200px;
     width: 500px;
     margin: 0 auto;
     background: var(--rood);
@@ -376,6 +376,7 @@ footer > div > p > a{
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    padding: 20px;
 }
 
 .bijmholt{
