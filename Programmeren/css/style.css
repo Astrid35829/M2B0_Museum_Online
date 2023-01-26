@@ -9,12 +9,13 @@
     --geel:rgb(255, 246, 140);
     --groen: rgb(171, 232, 171);
     --blauw: rgb(107, 206, 233);
-    --achtergrondZwart: rgb(34, 33, 33);
+    --achtergrondZwart: #1c1c1c;
     --letersZwart: rgb(0, 0, 0); 
 }
 
 body{
-    background: var(--achtergrondZwart)
+    background-image: url("../img/PossibleM2BoBackground2.png");
+    background-color: var(--achtergrondZwart);
 }
 
 .translate{
@@ -89,16 +90,16 @@ nav{
     height: 100%;
 }
 
-article{
-    width: 60vw;
-    margin:0 auto;
-    padding: 40px;
+img{
+    width: 700px;
+    border-radius: 10px;
+    transition: 0.2s transform;
+    background-color: #302f2f;
 }
 
-img{
-    width: 100%;
-    border-radius: 5px;
-    transition: 0.2s transform;
+.introImg{
+    width: 700px;
+    margin: 0 auto;
 }
 
 figcaption{
@@ -119,8 +120,6 @@ footer{
 header > img{
     width: 150px;;
     height: 100%;
-    margin-right: 20px;
-    margin-left: 10px;
 }
 
 header > img:hover{
@@ -203,16 +202,8 @@ footer > div > p > a{
     height: 36px;
 }
 
-.buttons > a{
-    color: var(--letersZwart);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .buttons{
-    width: 500px;
-    height: 0%;
+    width: 60vw;
     margin: 0 auto;
     margin-bottom: 60px;
 }
@@ -222,18 +213,18 @@ footer > div > p > a{
     justify-items: center;
     align-items: center;
     list-style: none;
-    gap: 20px;
 }
 
 .buttons > ul > li{
     width: 100%;
     height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .buttons > ul > li > a{
-    width: 100%;
+    width: 200px;
     height: 100%;
     display: block;
     text-align: center;
@@ -249,13 +240,17 @@ footer > div > p > a{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .intro{
     background: var(--blauw);
+    margin: 0 auto;
     border-radius: 25px;
     margin-bottom: 20px;
+    width: 700px;
 }
 
 .intro > p{
@@ -269,16 +264,16 @@ footer > div > p > a{
 
 
 .slide{
-    width: 300px;
+    width: 700px;
     height: 300px;
-    min-width: 100vh;
     border-radius: 5px;
     background-size:cover;
     animation-name: fotoslider;
-    animation-duration: 20s;
+    animation-duration: 50s;
     animation-iteration-count: infinite;
     margin: 0 auto;
     margin-bottom: 40px;
+    
 }
 
 @keyframes fotoslider{
@@ -319,7 +314,6 @@ footer > div > p > a{
         opacity: 0;
         background-image: url("../img/slideshow3.jpg");
     }
-
     60%{
         opacity: 0;
         background-image: url("../img/slideshow4.jpg");
@@ -354,7 +348,7 @@ footer > div > p > a{
     width: 60vw;
     height: 650px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 60px;;
 }
 
 .reviewsHead{
@@ -363,12 +357,14 @@ footer > div > p > a{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
     margin-bottom: 20px;
+    width: 700px;
 }
 
 .bruijn{
     height: 200px;
-    width: 500px;
+    width: 700px;
     margin: 0 auto;
     background: var(--rood);
     border-radius: 25px;
@@ -381,7 +377,7 @@ footer > div > p > a{
 
 .bijmholt{
     height: 170px;
-    width: 500px;
+    width: 700px;
     margin: 0 auto;
     background: var(--groen);
     border-radius: 25px;
@@ -389,25 +385,24 @@ footer > div > p > a{
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    padding: 20px;
 }
 
 .pronk{
     height: 170px;
-    width: 500px;
+    width: 700px;
     margin: 0 auto;
     background: var(--blauw);
     border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.reviews > div > p{
-    
+    padding: 20px;
+    margin-bottom: 40px;
 }
 
 .box{
-    width: 60vw;
+    width: 700px;
     height: 200px;
     margin: 0 auto;
     margin-bottom: 40px;
@@ -446,9 +441,6 @@ footer > div > p > a{
     background: var(--rood);
 }
 
-footer > div{
-
-}
 .Contact{
     background:var(--geel);
 }
@@ -473,6 +465,7 @@ footer > div{
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    gap: 5px;
 }
 
 .Socialmedia > figure> a> img{
@@ -488,21 +481,58 @@ footer > div{
     margin: 0 auto;
 }
 
-.meep > h2{
-    background: lightgoldenrodyellow;
+.gameplayInfo > h2{
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
 }
-.meep > p{
-    background: lightblue;
+
+.pAlgemeen{
+    
+    padding: 20px;
+    border-radius: 25px;
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.h2Algemeen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    margin: 20px;
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.p1{
+    background: var(--blauw);
+}
+
+.p2{
+    background: var(--rood);
+}
+
+.h2a{
+    background: var(--groen);
+}
+
+.h2b{
+    background: var(--geel);
+}
+
+.pAlgemeen > a{
+    font-style: italic;
 }
 
 @media screen and (max-width: 1260px){
-    header > ul > li > a{
-        flex-wrap: wrap;
-    }
+    
 }
 
 @media screen and(max-width: 1000px){
-    footer > div{
-        height: 300px;
-    }
+    
 }
